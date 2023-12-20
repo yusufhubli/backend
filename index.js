@@ -41,7 +41,7 @@ app.get('/order/orders/:id',getSingleOrder)
 app.get('/order/items/item/:id',getSingleItem)
 
 
-mongoose.connect(process.env.MONGO_URL,{
+mongoose.connect(process.env.MONGO_URL ,{
 dbName:"grocery",
 useNewUrlParser:true,
     useUnifiedTopology:true
